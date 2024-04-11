@@ -36,8 +36,7 @@ def test_extensions(stac_fixture, validator_fixture, extension_id, stac_version=
         ("corine-land-cover-plus-raster", "schema/products/clcplus.json"),
         pytest.param(
             "imperviousness-built-up-10m",
-            "schema/products/ibu.json",
-            marks=pytest.mark.skip(reason="Schema not available"),
+            "schema/products/ibu10m.json",
         ),
         pytest.param(
             "imperviousness-change-20m",
